@@ -7,10 +7,10 @@ import {
   Image,
   FlatList,
 } from "react-native";
-import { useRouter } from "expo-router";
 
 import styles from "./welcome.style";
 import { icons, SIZES } from "../../../constants";
+import { useRouter } from "expo-router";
 
 const jobTypes = ["Full-time", "Part-time", "Contractor"];
 
@@ -31,7 +31,8 @@ const Welcome = ({ searchTerm, setSearchTerm, handleClick }) => {
             style={styles.searchInput}
             value={searchTerm}
             onChangeText={(text) => setSearchTerm(text)}
-            placeholder="What are you looking for?"
+            placeholder="What are your looking for?"
+            placeholderTextColor="gray"
           />
         </View>
 
